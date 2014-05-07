@@ -5,7 +5,7 @@ Pebble Big Time Watch Face using the Alfa Slab font.
 
 Hosted at CloudPebble: https://cloudpebble.net/ide/project/55508
 
-Current Version: 1.0
+Current Version: 1.1
 
 Current Features
 ----------------
