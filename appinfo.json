@@ -1,0 +1,32 @@
+{
+    "resources": {
+        "media": []
+    },
+    "longName": "AlfaSlab Big Time",
+    "appKeys": {
+        "wed_text": 7,
+        "zero_prefix": 0,
+        "show_power": 1,
+        "mon_text": 5,
+        "show_btooth": 2,
+        "sat_text": 10,
+        "sun_text": 4,
+        "thu_text": 8,
+        "month_first": 3,
+        "vibe_btooth": 12,
+        "vibe_hour": 11,
+        "tue_text": 6,
+        "fri_text": 9
+    },
+    "watchapp": {
+        "watchface": true
+    },
+    "versionLabel": "1.0",
+    "shortName": "AlfaSlab",
+    "companyName": "Anodyzed",
+    "capabilities": [
+        "configurable"
+    ],
+    "versionCode": 1,
+    "uuid": "0e49eb08-f40e-4dc5-a2b3-d2fdb9870e7f"
+}
