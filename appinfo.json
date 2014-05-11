@@ -1,118 +1,118 @@
 {
-    "resources": {
-        "media": [
-            {
-                "name": "IMAGE_NUM_0",
-                "file": "images/as_0.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_1",
-                "file": "images/as_1.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_2",
-                "file": "images/as_2.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_3",
-                "file": "images/as_3.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_4",
-                "file": "images/as_4.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_5",
-                "file": "images/as_5.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_6",
-                "file": "images/as_6.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_7",
-                "file": "images/as_7.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_8",
-                "file": "images/as_8.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_NUM_9",
-                "file": "images/as_9.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_BLUETOOTH",
-                "file": "images/bluetooth.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_0",
-                "file": "images/power_0.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_1",
-                "file": "images/power_1.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_2",
-                "file": "images/power_2.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_3",
-                "file": "images/power_3.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_4",
-                "file": "images/power_4.png",
-                "type": "png"
-            },
-            {
-                "name": "IMAGE_POWER_5",
-                "file": "images/power_5.png",
-                "type": "png"
-            }
-        ]
-    },
-    "longName": "AlfaSlab Big Time",
-    "appKeys": {
-        "wed_text": 7,
-        "zero_prefix": 0,
-        "show_power": 1,
-        "mon_text": 5,
-        "show_btooth": 2,
-        "sat_text": 10,
-        "sun_text": 4,
-        "thu_text": 8,
-        "month_first": 3,
-        "vibe_btooth": 12,
-        "vibe_hour": 11,
-        "tue_text": 6,
-        "fri_text": 9
-    },
-    "watchapp": {
-        "watchface": true
-    },
-    "versionLabel": "1.0",
+    "versionCode": 1,
     "shortName": "AlfaSlab",
-    "companyName": "Anodyzed",
     "capabilities": [
         "configurable"
     ],
-    "versionCode": 1,
-    "uuid": "0e49eb08-f40e-4dc5-a2b3-d2fdb9870e7f"
+    "resources": {
+        "media": [
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_5",
+                "file": "images/power_5.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_4",
+                "file": "images/power_4.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_3",
+                "file": "images/power_3.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_2",
+                "file": "images/power_2.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_1",
+                "file": "images/power_1.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_POWER_0",
+                "file": "images/power_0.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_BLUETOOTH",
+                "file": "images/bluetooth.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_9",
+                "file": "images/as_9.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_8",
+                "file": "images/as_8.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_7",
+                "file": "images/as_7.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_6",
+                "file": "images/as_6.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_5",
+                "file": "images/as_5.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_4",
+                "file": "images/as_4.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_3",
+                "file": "images/as_3.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_2",
+                "file": "images/as_2.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_1",
+                "file": "images/as_1.png"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_NUM_0",
+                "file": "images/as_0.png"
+            }
+        ]
+    },
+    "versionLabel": "1.2",
+    "companyName": "Anodyzed",
+    "watchapp": {
+        "watchface": true
+    },
+    "uuid": "0e49eb08-f40e-4dc5-a2b3-d2fdb9870e7f",
+    "appKeys": {
+        "mon_text": 5,
+        "show_power": 1,
+        "thu_text": 8,
+        "fri_text": 9,
+        "wed_text": 7,
+        "vibe_btooth": 12,
+        "vibe_hour": 11,
+        "month_first": 3,
+        "sat_text": 10,
+        "show_btooth": 2,
+        "tue_text": 6,
+        "zero_prefix": 0,
+        "sun_text": 4
+    },
+    "longName": "AlfaSlab Big Time"
 }
