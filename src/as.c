@@ -115,10 +115,11 @@ static void load_digit_image_into_slot (int slot_number,int digit_value) {
     if((digit_value >= 0) && (digit_value <= 9)) {
       if(image_slot_state[slot_number] == EMPTY_SLOT) {
         images[slot_number] = gbitmap_create_with_resource(IMAGE_RESOURCE_IDS[digit_value]);
-        GRect frame = (GRect) {
-          .origin = { (slot_number % 2) * 72,(slot_number / 2) * 74 },
-          .size = images[slot_number]->bounds.size
-        };
+        GRect tmp_rect = gbitmap_get_bounds(images[slot_number]);
+        GRect frame = GRect(
+          (slot_number % 2) * 72, (slot_number / 2) * 74,
+            tmp_rect.size.w, tmp_rect.size.h
+        );
         image_layers[slot_number] = bitmap_layer_create(frame);
         bitmap_layer_set_bitmap(image_layers[slot_number],images[slot_number]);
         layer_add_child(window_get_root_layer(window),bitmap_layer_get_layer(image_layers[slot_number]));
@@ -228,11 +229,12 @@ static void handle_power_level (BatteryChargeState charge_state) {
     if(power_level != prev_power) {
         // Load and Display the Power Level Indicator
       power_image = gbitmap_create_with_resource(POWER_IMAGE_RESOURCE_IDS[power_level]);
-      GRect frame = (GRect) {
+      GRect power_rect = gbitmap_get_bounds(power_image);
+      GRect frame = GRect(
 //        .origin = { 31,150 }, <-- Centered under tens digits
-        .origin = { 5,150 },    //  Left aligned (5px border)
-        .size = power_image->bounds.size
-      };
+        5, 150,    //  Left aligned (5px border)
+        power_rect.size.w, power_rect.size.h
+      );
       if(power_layer == NULL) {
         power_layer = bitmap_layer_create(frame);
       }
@@ -268,11 +270,12 @@ static void handle_connection (bool connected) {
         //Display the Bluetooth Image Layer
       if(bluetooth_image == NULL) {
         bluetooth_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BLUETOOTH);
-        GRect frame = (GRect) {
+        GRect bluetooth_rect = gbitmap_get_bounds(bluetooth_image);
+        GRect frame = GRect(
 //          .origin = { 103,150 }, <-- Centered under ones digits
-          .origin = { 129,150 },   //  Right aligned (5px border)
-          .size = bluetooth_image->bounds.size
-        };
+          129, 150,   //  Right aligned (5px border)
+          bluetooth_rect.size.w, bluetooth_rect.size.h
+        );
         if(bluetooth_layer == NULL) {
           bluetooth_layer = bitmap_layer_create(frame);
         }
